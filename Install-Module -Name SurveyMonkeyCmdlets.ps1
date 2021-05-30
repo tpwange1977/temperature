@@ -1,1 +1,0 @@
-$surveymonkey = Connect-SurveyMonkey  -OAuthClientId "$OAuthClientId" -OAuthClientSecret "$OAuthClientSecret" -CallbackURL "$CallbackURL"
