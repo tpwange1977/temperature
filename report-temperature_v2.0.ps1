@@ -1,6 +1,6 @@
 ﻿# From: https://adamtheautomator.com/selenium-powershell/#Prerequisites
 
-$workingPath = 'D:\temperature'
+$workingPath = 'D:\git\temperature\'
 
 # Add the working directory to the environment path.
 # This is required for the ChromeDriver to work.
@@ -58,17 +58,18 @@ try {
     # * 本人已詳細閱讀上述調查表所列事項，並保證填寫內容正確屬實。  
     $ChromeDriver.FindElementByXPath('//*[@id="660768080_4340945605_label"]/span[2]').Click()
 
-    Start-Sleep -Seconds 8
+    Start-Sleep -Seconds 1
 
     # Click on the 下一頁 button
-    $ChromeDriver.FindElementByXPath('//*[@id="patas"]/main/article/section/form/div[2]/button').Click()
+    #$ChromeDriver.FindElementByXPath('//*[@id="patas"]/main/article/section/form/div[2]/button').Click()
 
-
+    $dateString = Get-Date -Format "yyyy/MM/dd HH:mm:ss -"  
+    $dateString + "Successfully submitted temperature." | Out-File -Append -FilePath $workingPath+'log.json'
 }
 catch {
     Write-Host "An error occurred: see log"
     $dateString = Get-Date -Format "yyyy/MM/dd HH:mm:ss - " 
-    $dateString + $_ | Out-File -Append -FilePath D:\Temperature\log.json
+    $dateString + $_ | Out-File -Append -FilePath $workingPath+'log.json'
     #$dateString = Get-Date -Format "yyyyMMdd HH:mm"
     #$dateString = "D:\Temperature\log_" + $dateString + ".json"
     #ConvertTo-Json $Error | Out-File -FilePath D:\Temperature\log.json
