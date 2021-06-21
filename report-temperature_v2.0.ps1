@@ -61,7 +61,7 @@ try {
     Start-Sleep -Seconds 1
 
     # Click on the 下一頁 button
-    #$ChromeDriver.FindElementByXPath('//*[@id="patas"]/main/article/section/form/div[2]/button').Click()
+    $ChromeDriver.FindElementByXPath('//*[@id="patas"]/main/article/section/form/div[2]/button').Click()
 
     $dateString = Get-Date -Format "yyyy/MM/dd HH:mm:ss -"  
     $dateString + "Successfully submitted temperature." | Out-File -Append -FilePath $workingPath+'log.json'
