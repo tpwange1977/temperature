@@ -87,8 +87,8 @@ catch {
 }    
 
 # Cleanup
-#$ChromeDriver.Close()
-#$ChromeDriver.Quit()
+$ChromeDriver.Close()
+$ChromeDriver.Quit()
 
 
 #| out-file -FilePath d:\result.html -Force; #same as the file saved from the webpage to html file in IE
