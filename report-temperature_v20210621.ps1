@@ -40,7 +40,7 @@ try {
     $ChromeDriver.FindElementByXPath('//*[@id="670913047_4407790170_label"]/span[2]').Click();
 
     #3
-    $ChromeDriver.FindElementByXPath('//*[@id="670913043"]').SendKeys("36.2");
+    $ChromeDriver.FindElementByXPath('//*[@id="670913043"]').SendKeys("36.3");
       
     #4
     $ChromeDriver.FindElementByXPath('//*[@id="670913052_4407790194_label"]/span[2]').Click();
@@ -49,13 +49,13 @@ try {
     $ChromeDriver.FindElementByXPath('//*[@id="670913053_4407790195_label"]/span[2]').Click();
     
     #6
-    $ChromeDriver.FindElementByXPath('//*[@id="670913055_4407807462_label"]/span[2]').Click();
+    $ChromeDriver.FindElementByXPath('//*[@id="670913055_4407790215_label"]/span[2]').Click();
     
     #Page 2
     $ChromeDriver.FindElementByXPath('//*[@id="patas"]/main/article/section/form/div[2]/button').Click()
 
     #7
-    $ChromeDriver.FindElementByXPath('//*[@id="670915461_4407824035_label"]/span[2]').Click();
+    #$ChromeDriver.FindElementByXPath('//*[@id="670915461_4407824035_label"]/span[2]').Click();
 
     #8
     $ChromeDriver.FindElementByXPath('//*[@id="670913054_4407790198_label"]/span[2]').Click();
